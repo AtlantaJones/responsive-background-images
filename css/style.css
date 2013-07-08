@@ -1,0 +1,64 @@
+
+.wrapper {
+    text-align:center;
+    width:100%;
+}
+
+h1,
+p {
+    font-family:"Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+/* set background attributes in the stylesheet so you don't have to include them inline */
+.photo {
+    background-position:center 17%;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    /* since we're "mobile first" and everything, the smallest image's height goes first */
+    height:278px;
+
+    /* for browsers that support it, add a little transition animation between height changes */
+    -webkit-transition: height 150ms linear;
+    -moz-transition:    height 150ms linear;
+    -ms-transition:     height 150ms linear;
+    -o-transition:      height 150ms linear;
+    transition:         height 150ms linear;
+}
+
+.photo-caption {
+    display:none;
+    padding:15px 0;
+}
+
+/* change height for screens at least 481px wide */
+@media only screen and (max-width: 480px) {
+
+    .photo-caption.small {
+        display:block;
+    }
+}
+
+/* change height for screens at least 481px wide */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .photo {
+        height:445px;
+    }
+
+    .photo-caption.medium {
+        display:block;
+    }
+}
+
+/* change height for screens at least 769px wide */
+@media only screen and (min-width: 769px) {
+
+    .photo {
+        height:575px;
+    }
+
+    .photo-caption.large {
+        display:block;
+    }
+}
