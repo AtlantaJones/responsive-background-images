@@ -31,7 +31,7 @@ p {
     padding:15px 0;
 }
 
-/* change height for screens at least 481px wide */
+/* screens at least 480px wide */
 @media only screen and (max-width: 480px) {
 
     .photo-caption.small {
@@ -39,8 +39,8 @@ p {
     }
 }
 
-/* change height for screens at least 481px wide */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* screens between 480 and 1024 */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
 
     .photo {
         height:445px;
@@ -51,8 +51,8 @@ p {
     }
 }
 
-/* change height for screens at least 769px wide */
-@media only screen and (min-width: 769px) {
+/* screens at least 1024px wide */
+@media only screen and (min-width: 1024px) {
 
     .photo {
         height:575px;
